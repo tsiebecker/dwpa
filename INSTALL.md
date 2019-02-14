@@ -13,7 +13,7 @@ Requirements
  - gcc toolchain
  - hcxpcaptool tool, part of hcxtools https://github.com/ZerBea/hcxtools
  - git `sudo apt-get install git`
- - reCAPTCHA API keys for your domain, register here https://www.google.com/recaptcha
+ - reCAPTCHA API keys for your domain (reCAPTCHA, Version 2), register here https://www.google.com/recaptcha/admin/
  - routerkeygenPC, https://github.com/routerkeygen/routerkeygenPC
 
 Compilation of external tools
