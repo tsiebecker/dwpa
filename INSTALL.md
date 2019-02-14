@@ -147,7 +147,7 @@ elseif (is_dir('/dev/shm'))
     define('SHM', '/dev/shm/');
 else
     die('Can not access SHM!');
-define('MIN_HC_VER', '0.9.0');
+define('MIN_HC_VER', '1.1.0');
 ?>
 ```
 
