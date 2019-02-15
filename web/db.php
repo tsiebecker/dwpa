@@ -2,6 +2,8 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
+require('conf.php');
+
 $mysql = mysqli_init();
 $mysql->real_connect($cfg_db_host, $cfg_db_user, $cfg_db_pass, $cfg_db_name);
 if ($mysql->errno) {
