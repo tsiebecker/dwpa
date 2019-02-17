@@ -110,7 +110,7 @@ WHERE NOT EXISTS (SELECT d_id
                         n2d.net_id=(SELECT net_id
                                     FROM nets
                                     WHERE n_state=0 AND
-                                          algo=''
+                                          algo IS NULL
                                     ORDER BY hits, ts
                                     LIMIT 1))
 ORDER BY d.wcount, d.dname
@@ -153,11 +153,11 @@ FROM nets n
 WHERE ssid = BINARY (SELECT ssid
                      FROM nets
                      WHERE n_state=0 AND
-                           algo=''
+                           algo IS NULL
                      ORDER BY hits, ts
                      LIMIT 1) AND
       n_state=0 AND
-      algo='' AND
+      algo IS NULL AND
       net_id NOT IN (SELECT net_id
                      FROM n2d
                      WHERE d_id IN (".implode(',', array_fill(0, $dc, '?')).") AND
